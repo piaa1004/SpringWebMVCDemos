@@ -1,0 +1,10 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/><title>fragment demo</title></head>
+<body>
+<h1>full page</h1>
+<ul th:fragment="list">
+    <li th:each="i : ${items}" th:text="${i}">item</li>
+</ul>
+</body>
+</html>

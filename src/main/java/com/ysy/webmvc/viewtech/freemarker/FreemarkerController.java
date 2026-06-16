@@ -1,0 +1,15 @@
+package com.ysy.webmvc.viewtech.freemarker;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class FreemarkerController {
+
+    @GetMapping("/fm/hello")
+    public String hello(Model model) {
+        model.addAttribute("name", "freemarker");
+        return "freemarker/hello";
+    }
+}
